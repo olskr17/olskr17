@@ -1,0 +1,115 @@
+
+.mainWrapper{
+    font-family: "Arial", sans-serif;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    font-size: 25px;
+}
+
+main{
+    border: 3px solid black;
+}
+.zagol{
+    text-align: center;
+    font-size: 45px;
+    color: black;
+    margin: 0 auto;
+    transition: 0.9s;
+    /*text-shadow: 3px 3px 5px red;*/
+}
+.zagol:hover {
+    color: black;
+    cursor: pointer;
+    -webkit-transform: translate(10px, -5px);
+    text-shadow: 2px 2px 4px red;
+}
+.i1{
+    width: 530px;
+    height: 580px;
+    text-align: left;
+}
+.tlph{
+    display: flex;
+    /*flex-direction: column;*/
+}
+
+.left{
+    /*width: 75%;*/
+    margin: 0 auto;
+}
+.telephone{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.garant{
+    margin: 10px;
+    text-align: left;
+}
+.garant--content{
+    font-size: medium;
+}
+.properties{
+}
+.smallImages{
+    padding: 20px;
+}
+.smallImage{
+    justify-content: center;
+    margin-left: 40px;
+    transition: .3s;
+}
+.smallImage:hover{
+    transform: translateY(-10px);
+}
+p{
+    font-size: medium;
+}
+footer{
+    color: grey;
+    font-size: x-small;
+}
+.size{
+    font-size: 20px;
+    transition: 0.9s;
+}
+.size:hover{
+    /*text-shadow: black 1px 1px 0, black 0 0 5px;*/
+    text-shadow: 2px 2px 4px red;
+}
+.sale{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    opacity: 0.5;
+}
+@media (max-width: 1200px){
+    .mainWrapper{
+        max-width: 1000px;
+        min-width: 800px;
+    }
+    .tlph{
+        flex-direction: column;
+    }
+    .telephone{
+        margin: 0 auto;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .properties{
+        text-align: center;
+    }
+    .garant{
+        text-align: center;
+    }
+}
