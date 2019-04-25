@@ -2,29 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Final project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Hammersmith+One"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <title>Tajam</title>
 </head>
 <body>
 <section class="mainHeader">
     <div class="header">
         <div class="header__icon">
-            <img class="header__iconImage" src="css/img/icon.png" height="50" width="44"/>
+            <img class="header__iconImage" src="img/icon.png" alt="icon">
             <p class="header__iconText">tajam</p>
         </div>
         <div class="header__menu">
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-menu-btn">
+                <i class="fas fa-ellipsis-h"></i>
+            </label>
             <ul class="header__button">
-                <li class="button"><a href="#">HOME</a></li>
+                <li class="button"><a href="#">HOME</a>
                 <li class="button"><a href="#">ABOUT</a></li>
                 <li class="button"><a href="#">EXPERTISE</a></li>
                 <li class="button"><a href="#">TEAMS</a></li>
                 <li class="button"><a href="#">WORKS</a></li>
                 <li class="button"><a href="#">PEOPLE SAY</a></li>
                 <li class="button"><a href="#">CONTACT</a></li>
+                <label for="chk" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
             </ul>
         </div>
     </div>
@@ -43,7 +51,7 @@
             <p class="button_text">LEARN MORE</p>
         </div>
     </div>
-    <div class="header__footer">
+    <div class="header__slider">
         <ul class="footer__point">
             <li class="point"></li>
             <li class="point"></li>
@@ -55,9 +63,7 @@
 <section class="ourStory">
     <div class="ourStory__main">
         <div class="ourStory__mainIcon">
-            <img class="ourStory__mainIcon" src="css/img/ourStory.png" height="229" width="235"/>
-        </div>
-
+            <img class="ourStoryIcon" src="img/ourStory.png" height="229" width="235"/></div>
         <div class="ourStory__mainDescription">
             <p class="description__title">OUR STORY</p>
             <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -71,50 +77,274 @@
             <p class="description__button">LEARN MORE</p>
         </div>
     </div>
-
     <div class="ourStory__watchOurStory">
         <div class="watchOurStory__icon">
-            <img src="css/img/playIcon.png" height="100" width="100"/></div>
+            <img src="img/playIcon.png" height="100" width="100"/></div>
         <p class="watchOurStory__text">WATCH OUR STORY</p>
     </div>
 </section>
 <section class="expertise">
     <div class="expertise__title">
         <p class="expertise__titleMain">EXPERTISE</p>
-        <p class="expertise__titleText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, maiores.</p>
+        <p class="ourTeam__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, maiores.</p>
         <div class="lineUnderMainTitle lineUnderMainTitle--grey"></div>
     </div>
     <div class="expertise__main">
         <div class="expertiseBlock expertiseBlock-noBorderTopLeft">
-            <img class="block__image" src="css/img/webDesign.png" height="50" width="49"/>
+            <img class="block__image" src="css/webDesign.png" height="50" width="49"/>
             <p class="block__title">WEB DESIGN & DEVELOPMENT</p>
-            <p class="block__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, doloribus eligendi eos ipsum laboriosam magnam.</p>
+            <p class="block__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, doloribus eligendi
+                eos ipsum laboriosam magnam.</p>
         </div>
         <div class="expertiseBlock expertiseBlock-noBorderTopCenter">
-            <img class="block__image" src="css/img/brandingIdentity.png" height="42" width="50"/>
+            <img class="block__image" src="css/brandingIdentity.png" height="42" width="50"/>
             <p class="block__title">BRANDING IDENTITY</p>
-            <p class="block__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consectetur cupiditate eos laudantium nesciunt unde?</p>
+            <p class="block__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consectetur
+                cupiditate eos laudantium nesciunt unde?</p>
         </div>
         <div class="expertiseBlock expertiseBlock-noBorderTopRight">
-            <img class="block__image" src="css/img/mobilyApp.png" height="50" width="28"/>
+            <img class="block__image" src="css/mobilyApp.png" height="50" width="28"/>
             <p class="block__title">MOBILE APP</p>
-            <p class="block__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur maiores molestias quos voluptatem?</p>
+            <p class="block__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur
+                maiores molestias quos voluptatem?</p>
         </div>
         <div class="expertiseBlock expertiseBlock-noBorderBottomLeft">
-            <img class="block__image" src="css/img/searchEngine.png" height="50" width="50"/>
+            <img class="block__image" src="css/searchEngine.png" height="50" width="50"/>
             <p class="block__title">SEARCH ENGINE OPTIMIZATION</p>
-            <p class="block__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita fuga mollitia obcaecati optio rem velit.</p>
+            <p class="block__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita fuga mollitia
+                obcaecati optio rem velit.</p>
         </div>
         <div class="expertiseBlock expertiseBlock-noBorderBottomCenter">
-            <img class="block__image" src="css/img/gameDevelopment.png" height="50" width="41"/>
+            <img class="block__image" src="css/gameDevelopment.png" height="50" width="41"/>
             <p class="block__title">GAME DEVELOPMENT</p>
-            <p class="block__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugit inventore nemo porro tempore, ullam?</p>
+            <p class="block__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugit
+                inventore nemo porro tempore, ullam?</p>
         </div>
         <div class="expertiseBlock expertiseBlock-noBorderBottomRight">
-            <img class="block__image" src="css/img/madeWithLove.png" height="46" width="50"/>
+            <img class="block__image" src="css/madeWithLove.png" height="46" width="50"/>
             <p class="block__title">MADE WITH LOVE</p>
-            <p class="block__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta expedita iure, necessitatibus nulla quo tempora.</p>
+            <p class="block__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta expedita iure,
+                necessitatibus nulla quo tempora.</p>
         </div>
+    </div>
+</section>
+<section class="ourTeam">
+    <div class="ourTeam__title">
+        <p class="expertise__titleMain ourTeam__title-color">MEET OUR AMAZING TEAM</p>
+        <p class="ourTeam__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, maiores.</p>
+        <div class="lineUnderMainTitle lineUnderMainTitle--grey"></div>
+    </div>
+    <div class="ourTeam__portraits">
+        <div class="portrait__block">
+            <div class="portrait__photo">
+
+            </div>
+            <div class="portrait__text">
+                <p class="portrait__name">
+                    JOHN DOE
+                </p>
+                <p class="portrait__descr">
+                    CEO & FOUNDER
+                </p>
+            </div>
+        </div>
+        <div class="portrait__block">
+            <div class="portrait__photo">
+
+            </div>
+            <div class="portrait__text">
+                <p class="portrait__name">
+                    ALEX LIBOVSKI
+                </p>
+                <p class="portrait__descr">
+                    ENGINEERING
+                </p>
+            </div>
+        </div>
+        <div class="portrait__block">
+            <div class="portrait__photo">
+
+            </div>
+            <div class="portrait__text">
+                <p class="portrait__name">
+                    JENK KOL
+                </p>
+                <p class="portrait__descr">
+                    DESIGNER
+                </p>
+            </div>
+        </div>
+        <div class="portrait__block">
+            <div class="portrait__photo">
+
+            </div>
+            <div class="portrait__text">
+                <p class="portrait__name">
+                    PET ROMAK
+                </p>
+                <p class="portrait__descr">
+                    MARKETING
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="ourTeamBottomText">
+        <p class="ourTeamBottomText">Become part of our dream team, let`s join us!</p>
+    </div>
+    <div class="ourTeam__button">
+        WE ARE HIRING
+    </div>
+</section>
+<section class="works">
+    <div class="works__title">
+        <p class="expertise__titleMain work__mainTitle-color">OUR TEAM WORKS</p>
+        <p class="expertise__titleText work__mainTitle-color">See all project in dribbble ></p>
+    </div>
+    <div class="works__blocks">
+        <div class="work__block color-lightGrey"></div>
+        <div class="work__block color-grey"></div>
+        <div class="work__block color-darkGrey"></div>
+        <div class="work__block color-heavyGrey"></div>
+        <div class="work__block color-lightGrey"></div>
+        <div class="work__block color-grey"></div>
+        <div class="work__block color-darkGrey"></div>
+        <div class="work__block color-heavyGrey"></div>
+        <div class="work__block color-lightGrey"></div>
+        <div class="work__block color-grey"></div>
+    </div>
+    <div class="works__button">
+        LOAD MORE
+    </div>
+</section>
+<section class="comment">
+    <div class="comment__content">
+        <p class="comment__title">“</p>
+        <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut error iure nesciunt
+            nulla pariatur quam quo, suscipit? Aut error exercitationem hic ipsam soluta. Aliquid, aperiam cumque
+            distinctio doloremque ducimus eius hic iure laudantium, nam necessitatibus sequi temporibus vel voluptas!
+            Cumque eius esse laborum magni, neque nesciunt possimus quos saepe.</p>
+        <p class="comment__name portrait__name">JANE GALADRIER</p>
+        <p class="comment__nameDescr portrait__descr">CEO TENGKUREP</p>
+    </div>
+    <div class="comment__images">
+        <img class="comImage" src="css/back.png" height="21" width="11"/>
+        <img class="comImage" src="css/comPort1.png" height="45" width="45"/>
+        <img class="comImage" src="css/comPort2.png" height="45" width="45"/>
+        <img class="comImage" src="css/comPort3.png" height="70" width="70"/>
+        <img class="comImage" src="css/comPort4.png" height="45" width="45"/>
+        <img class="comImage" src="css/comPort5.png" height="45" width="45"/>
+        <img class="comImage" src="css/forward.png" height="21" width="11"/>
+    </div>
+</section>
+<section class="ourClients">
+    <div class="ourClients__content">
+        <div class="ourClients__giveUsGoodNews">
+            <div class="giveUsGoodNews__title">
+                <p class="expertise__titleMain" style="margin-bottom: 20px;">GIVE US A GOOD NEWS</p>
+            </div>
+            <form class="giveUsGoodNews__content" method="post" action="#">
+                <!--<p class="content__name block">Name</p>-->
+                <!--<p class="content__email block">Email</p>-->
+                <!--<p class="content__subject block">Subject</p>-->
+                <!--<p class="content__yourMessage block">Your Message</p>-->
+                <input class="block" name="username" type="text" placeholder="Name"><br>
+                <input class="block" name="username" type="email"  placeholder="Email"><br>
+                <input class="block" name="username" type="text"  placeholder="Subject"><br>
+                <textarea class="block" name="msg" style="height: 10vh; resize: none;"
+                          placeholder="Your Message"></textarea>
+                <div class="content__button">SUBMIT</div>
+            </form>
+        </div>
+        <div class="ourClients__ourHappyClient">
+            <p class="expertise__titleMain" style="margin-bottom: 20px;">OUR HAPPY CLIENT</p>
+            <div class="client__blocks">
+                <div class="client__block">
+                    <img src="css/zara.png"/>
+                </div>
+                <div class="client__block">
+                    <img src="css/mango.png"/>
+                </div>
+                <div class="client__block">
+                    <img src="css/barneysNewyork.png"/>
+                </div>
+                <div class="client__block">
+                    <img src="css/gucci.png"/>
+                </div>
+                <div class="client__block">
+                    <img src="css/calvinKlein.png"/>
+                </div>
+                <div class="client__block">
+                    <img src="css/nike.png"/>
+                </div>
+                <div class="client__block">
+                    <img src="css/converse.png"/>
+                </div>
+                <div class="client__block">
+                    <img src="css/puma.png"/>
+                </div>
+                <div class="client__block">
+                    <img src="css/levi`s.png"/>
+                </div>
+                <div class="client__block">
+                    <img src="css/billabong.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="footer__main">
+        <div class="footerMain__block">
+            <div class="blockTitle">
+                <img class="footerMain__image" src="img/mainLogo.png" height="50" width="128"/>
+            </div>
+            <p class="footerMain__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque ipsum labore
+                laborum neque nostrum quas quia quibusdam tempora, tempore ut voluptates? Amet aperiam debitis eos neque
+                quam, quibusdam voluptatem?</p>
+        </div>
+        <div class="footerMain__block">
+            <div class="blockTitle">
+                <p class="footerMain__blockTitle">OUR STUDIO</p>
+            </div>
+            <div class="footerMain__location">
+                <img class="locationImg" src="css/location.png" height="19" width="14"/>
+                <p class="footerBlock__text">Ruko cucruk, Jl. Radio luar dalem jos
+                    No. 12-13, Kalideres -Jakarta Barat 11480-Indonesia</p>
+            </div>
+            <div class="footerMain__phoneNumber">
+                <img class="phoneNumberImg" src="img/phoneNumber.png" height="17" width="17"/>
+                <p class="footerBlock__text">(+62)21-2224 3333</p>
+            </div>
+        </div>
+        <div class="footerMain__block">
+            <div class="blockTitle">
+                <p class="footerMain__blockTitle">STAY IN TOUCH</p>
+            </div>
+            <div class="footerMain__subscribe">
+                <form class="subscribe__input" action="#">
+                    <input class="input" type="email" placeholder="Subscribe our newsletter">
+                </form>
+                <a href="#">
+                    <img class="subscribe__img" src="img/sendLetterButton.png" height="45" width="70"/>
+                </a>
+            </div>
+            <div class="subscribeIconsSocialNetworks">
+                <img class="socialNetworksIcon" src="img/facebook.png" height="35" width="35"/>
+                <img class="socialNetworksIcon" src="img/twitter.png" height="35" width="35"/>
+                <img class="socialNetworksIcon" src="img/dribbble.png" height="35" width="35"/>
+                <img class="socialNetworksIcon" src="img/instagram.png" height="35" width="35"/>
+                <img class="socialNetworksIcon" src="img/gplus.png" height="35" width="35"/>
+                <img class="socialNetworksIcon" src="img/youtube.png" height="35" width="35"/>
+            </div>
+        </div>
+    </div>
+    <div class="footer__footer">
+        <nav class="footer__navBar">
+            <li class="button"><a href="#">HELP</a></li>
+            <li class="button"><a href="#">TERMS & CONDITION</a></li>
+            <li class="button"><a href="#">PRIVACY</a></li>
+        </nav>
+        <p class="footer__copyrights">Copyright &#169 2015 - Tajam Creative</p>
     </div>
 </section>
 </body>
